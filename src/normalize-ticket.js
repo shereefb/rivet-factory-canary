@@ -1,3 +1,3 @@
 export function normalizeTicket(value) {
-  return value.trim().toUpperCase();
+  return value.trim().replace(/\s+/g, '-').toUpperCase();
 }
